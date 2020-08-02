@@ -12,9 +12,7 @@ class Column extends React.Component {
   render() {
     return(
       <section className={styles.component}>
-        <h3 className={styles.title}>{this.props.one}</h3>
-        <h3 className={styles.title}>{this.props.two}</h3>
-        <h3 className={styles.title}>{this.props.three}</h3>
+        <h3 className={styles.title}>{this.props.title}</h3>
       </section>
     )
   }
