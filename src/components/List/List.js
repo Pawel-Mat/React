@@ -38,16 +38,16 @@ class List extends React.Component {
       }
     ));
   }
-  
+
   render() {
     return (
       <section className={styles.component}>
         <Hero titleText={this.props.title}
               image={this.props.image} >
+        </Hero>
         <div className={styles.description}>
           {ReactHtmlParser(this.props.description)}
         </div>
-        </Hero>
         <div className={styles.columns}>
           {this.state.columns.map(({key, ...columnProps}) => (
             <Column key={key} {...columnProps} />
