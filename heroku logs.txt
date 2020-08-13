@@ -1,0 +1,101 @@
+$ heroku logs
+2020-08-13T10:10:48.332894+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2020-08-13T10:10:48.333025+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2020-08-13T10_10_48_326Z-debug.log
+2020-08-13T10:10:48.392520+00:00 heroku[web.1]: Process exited with status 1
+2020-08-13T10:10:48.429003+00:00 heroku[web.1]: State changed from starting to crashed
+2020-08-13T10:10:48.431070+00:00 heroku[web.1]: State changed from crashed to starting
+2020-08-13T10:10:52.986245+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-08-13T10:10:56.197840+00:00 app[web.1]:
+2020-08-13T10:10:56.197865+00:00 app[web.1]: > react-to-do@1.0.0 start /app
+2020-08-13T10:10:56.197866+00:00 app[web.1]: > webpack-dev-server --mode development --open --hot
+2020-08-13T10:10:56.197866+00:00 app[web.1]:
+2020-08-13T10:10:58.021406+00:00 app[web.1]: internal/modules/cjs/loader.js:968
+2020-08-13T10:10:58.021432+00:00 app[web.1]: throw err;
+2020-08-13T10:10:58.021433+00:00 app[web.1]: ^
+2020-08-13T10:10:58.021433+00:00 app[web.1]:
+2020-08-13T10:10:58.021434+00:00 app[web.1]: Error: Cannot find module 'html-webpack-plugin'
+2020-08-13T10:10:58.021434+00:00 app[web.1]: Require stack:
+2020-08-13T10:10:58.021434+00:00 app[web.1]: - /app/webpack.config.js
+2020-08-13T10:10:58.021438+00:00 app[web.1]: - /app/node_modules/webpack-cli/bin/utils/convert-argv.js
+2020-08-13T10:10:58.021439+00:00 app[web.1]: - /app/node_modules/webpack-dev-server/bin/webpack-dev-server.js
+2020-08-13T10:10:58.021439+00:00 app[web.1]: at Function.Module._resolveFilename (internal/modules/cjs/loader.js:965:15)
+2020-08-13T10:10:58.021440+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:841:27)
+2020-08-13T10:10:58.021440+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:1025:19)
+2020-08-13T10:10:58.021440+00:00 app[web.1]: at require (internal/modules/cjs/helpers.js:72:18)
+2020-08-13T10:10:58.021441+00:00 app[web.1]: at Object.<anonymous> (/app/webpack.config.js:3:27)
+2020-08-13T10:10:58.021441+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:1137:30)
+2020-08-13T10:10:58.021441+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+2020-08-13T10:10:58.021442+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:985:32)
+2020-08-13T10:10:58.021442+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+2020-08-13T10:10:58.021442+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:1025:19) {
+2020-08-13T10:10:58.021443+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2020-08-13T10:10:58.021443+00:00 app[web.1]: requireStack: [
+2020-08-13T10:10:58.021443+00:00 app[web.1]: '/app/webpack.config.js',
+2020-08-13T10:10:58.021444+00:00 app[web.1]: '/app/node_modules/webpack-cli/bin/utils/convert-argv.js',
+2020-08-13T10:10:58.021444+00:00 app[web.1]: '/app/node_modules/webpack-dev-server/bin/webpack-dev-server.js'
+2020-08-13T10:10:58.021444+00:00 app[web.1]: ]
+2020-08-13T10:10:58.021445+00:00 app[web.1]: }
+2020-08-13T10:10:58.044582+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2020-08-13T10:10:58.045100+00:00 app[web.1]: npm ERR! errno 1
+2020-08-13T10:10:58.050983+00:00 app[web.1]: npm ERR! react-to-do@1.0.0 start: `webpack-dev-server --mode development --open --hot`
+2020-08-13T10:10:58.051207+00:00 app[web.1]: npm ERR! Exit status 1
+2020-08-13T10:10:58.051523+00:00 app[web.1]: npm ERR!
+2020-08-13T10:10:58.051796+00:00 app[web.1]: npm ERR! Failed at the react-to-do@1.0.0 start script.
+2020-08-13T10:10:58.051990+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2020-08-13T10:10:58.070200+00:00 app[web.1]:
+2020-08-13T10:10:58.072182+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2020-08-13T10:10:58.072373+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2020-08-13T10_10_58_060Z-debug.log
+2020-08-13T10:10:58.177713+00:00 heroku[web.1]: Process exited with status 1
+2020-08-13T10:10:58.219078+00:00 heroku[web.1]: State changed from starting to crashed
+2020-08-13T10:11:02.165852+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=polar-tundra-52679.herokuapp.com request_id=5ab8dd64-f4fe-4756-9a43-63064cffd3b2 fwd="188.121.15.5" dyno= connect= service= status=503 bytes= protocol=https
+2020-08-13T10:11:02.568309+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=polar-tundra-52679.herokuapp.com request_id=4ad5d037-c929-4b55-9275-4b7ce693ee35 fwd="188.121.15.5" dyno= connect= service= status=503 bytes= protocol=https
+2020-08-13T10:12:21.000000+00:00 app[api]: Build started by user mat.pawel@gmail.com
+2020-08-13T10:13:14.803044+00:00 app[api]: Release v11 created by user mat.pawel@gmail.com
+2020-08-13T10:13:14.803044+00:00 app[api]: Deploy b3fa3c73 by user mat.pawel@gmail.com
+2020-08-13T10:13:14.954713+00:00 heroku[web.1]: State changed from crashed to starting
+2020-08-13T10:13:18.000000+00:00 app[api]: Build succeeded
+2020-08-13T10:13:22.133835+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-08-13T10:13:24.041525+00:00 app[web.1]:
+2020-08-13T10:13:24.041540+00:00 app[web.1]: > react-to-do@1.0.0 start /app
+2020-08-13T10:13:24.041541+00:00 app[web.1]: > webpack-dev-server --mode development --open --hot
+2020-08-13T10:13:24.041542+00:00 app[web.1]:
+2020-08-13T10:13:25.260049+00:00 app[web.1]: internal/modules/cjs/loader.js:968
+2020-08-13T10:13:25.260088+00:00 app[web.1]: throw err;
+2020-08-13T10:13:25.260089+00:00 app[web.1]: ^
+2020-08-13T10:13:25.260089+00:00 app[web.1]:
+2020-08-13T10:13:25.260090+00:00 app[web.1]: Error: Cannot find module 'mini-css-extract-plugin'
+2020-08-13T10:13:25.260090+00:00 app[web.1]: Require stack:
+2020-08-13T10:13:25.260091+00:00 app[web.1]: - /app/webpack.config.js
+2020-08-13T10:13:25.260091+00:00 app[web.1]: - /app/node_modules/webpack-cli/bin/utils/convert-argv.js
+2020-08-13T10:13:25.260092+00:00 app[web.1]: - /app/node_modules/webpack-dev-server/bin/webpack-dev-server.js
+2020-08-13T10:13:25.260092+00:00 app[web.1]: at Function.Module._resolveFilename (internal/modules/cjs/loader.js:965:15)
+2020-08-13T10:13:25.260093+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:841:27)
+2020-08-13T10:13:25.260093+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:1025:19)
+2020-08-13T10:13:25.260093+00:00 app[web.1]: at require (internal/modules/cjs/helpers.js:72:18)
+2020-08-13T10:13:25.260094+00:00 app[web.1]: at Object.<anonymous> (/app/webpack.config.js:4:30)
+2020-08-13T10:13:25.260094+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:1137:30)
+2020-08-13T10:13:25.260094+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+2020-08-13T10:13:25.260095+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:985:32)
+2020-08-13T10:13:25.260095+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+2020-08-13T10:13:25.260095+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:1025:19) {
+2020-08-13T10:13:25.260096+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2020-08-13T10:13:25.260096+00:00 app[web.1]: requireStack: [
+2020-08-13T10:13:25.260096+00:00 app[web.1]: '/app/webpack.config.js',
+2020-08-13T10:13:25.260097+00:00 app[web.1]: '/app/node_modules/webpack-cli/bin/utils/convert-argv.js',
+2020-08-13T10:13:25.260097+00:00 app[web.1]: '/app/node_modules/webpack-dev-server/bin/webpack-dev-server.js'
+2020-08-13T10:13:25.260097+00:00 app[web.1]: ]
+2020-08-13T10:13:25.260098+00:00 app[web.1]: }
+2020-08-13T10:13:25.273191+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2020-08-13T10:13:25.273400+00:00 app[web.1]: npm ERR! errno 1
+2020-08-13T10:13:25.276159+00:00 app[web.1]: npm ERR! react-to-do@1.0.0 start: `webpack-dev-server --mode development --open --hot`
+2020-08-13T10:13:25.276255+00:00 app[web.1]: npm ERR! Exit status 1
+2020-08-13T10:13:25.276369+00:00 app[web.1]: npm ERR!
+2020-08-13T10:13:25.276461+00:00 app[web.1]: npm ERR! Failed at the react-to-do@1.0.0 start script.
+2020-08-13T10:13:25.276529+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2020-08-13T10:13:25.286249+00:00 app[web.1]:
+2020-08-13T10:13:25.286388+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2020-08-13T10:13:25.286468+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2020-08-13T10_13_25_277Z-debug.log
+2020-08-13T10:13:25.342129+00:00 heroku[web.1]: Process exited with status 1
+2020-08-13T10:13:25.379421+00:00 heroku[web.1]: State changed from starting to crashed
+2020-08-13T10:15:38.496156+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=polar-tundra-52679.herokuapp.com request_id=feebad12-e4b6-466e-990c-a989677585e3 fwd="188.121.15.5" dyno= connect= service= status=503 bytes= protocol=https
+2020-08-13T10:15:38.719265+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=polar-tundra-52679.herokuapp.com request_id=7340f4e5-ad6a-4cbb-a2e3-9df0adff8243 fwd="188.121.15.5" dyno= connect= service= status=503 bytes= protocol=https
