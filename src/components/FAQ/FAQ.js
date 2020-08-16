@@ -6,7 +6,7 @@ import Hero from '../Hero/Hero.js';
 const FAQ = () => (
   <Container>
     <Hero titleText={pageContents.FAQTitle}
-      image={listData.image}>
+      image={listData.imageFAQ}>
     </Hero>
     <p>{pageContents.FAQContent}</p>
   </Container>

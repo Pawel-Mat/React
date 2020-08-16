@@ -28,6 +28,8 @@ export const listData = {
   title: 'Things to do <sup>soon!</sup>',
   description: 'Interesting things I want to check out!',
   image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  imageFAQ: 'https://cdn.pixabay.com/photo/2016/11/30/12/16/question-mark-1872665_960_720.jpg',
+  imageInfo: 'https://cdn.pixabay.com/photo/2016/01/19/14/53/book-1149031_960_720.jpg',
   columns: [
     {
       key: 0,
@@ -82,7 +84,19 @@ const lists = [
     id: 'list-1',
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    image: 'https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  },
+  {
+    id: 'list-2',
+    title: 'Cake list',
+    description: 'Give me some sugar!',
+    image: 'https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+  },
+  {
+    id: 'list-3',
+    title: 'Interesting movies',
+    description: 'I will watch them all!',
+    image: 'https://images.pexels.com/photos/3921045/pexels-photo-3921045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
   },
 ];
 
@@ -104,12 +118,6 @@ const columns = [
     listId: 'list-1',
     title: 'Games',
     icon: 'gamepad',
-  },
-  {
-    id: 'column-4',
-    listId: 'list-2',
-    title: 'Strange column',
-    icon: 'question',
   },
 ];
 

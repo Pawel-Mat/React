@@ -6,7 +6,7 @@ import Hero from '../Hero/Hero.js';
 const Info = () => (
   <Container>
     <Hero titleText={pageContents.infoTitle}
-      image={listData.image}>
+      image={listData.imageInfo}>
     </Hero>
     {pageContents.infoContent}
   </Container>
