@@ -1,100 +1,101 @@
-2020-08-14T07:53:21.171940+00:00 app[web.1]: throw err;
-2020-08-14T07:53:21.171940+00:00 app[web.1]: ^
-2020-08-14T07:53:21.171941+00:00 app[web.1]:
-2020-08-14T07:53:21.171941+00:00 app[web.1]: Error: Cannot find module 'mini-css-extract-plugin'
-2020-08-14T07:53:21.171942+00:00 app[web.1]: Require stack:
-2020-08-14T07:53:21.171942+00:00 app[web.1]: - /app/webpack.config.js
-2020-08-14T07:53:21.171943+00:00 app[web.1]: - /app/node_modules/webpack-cli/bin/utils/convert-argv.js
-2020-08-14T07:53:21.171944+00:00 app[web.1]: - /app/node_modules/webpack-dev-server/bin/webpack-dev-server.js
-2020-08-14T07:53:21.171944+00:00 app[web.1]: at Function.Module._resolveFilename (internal/modules/cjs/loader.js:965:15)
-2020-08-14T07:53:21.171944+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:841:27)
-2020-08-14T07:53:21.171945+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:1025:19)
-2020-08-14T07:53:21.171945+00:00 app[web.1]: at require (internal/modules/cjs/helpers.js:72:18)
-2020-08-14T07:53:21.171945+00:00 app[web.1]: at Object.<anonymous> (/app/webpack.config.js:4:30)
-2020-08-14T07:53:21.171946+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:1137:30)
-2020-08-14T07:53:21.171946+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
-2020-08-14T07:53:21.171947+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:985:32)
-2020-08-14T07:53:21.171947+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:878:14)
-2020-08-14T07:53:21.171947+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:1025:19) {
-2020-08-14T07:53:21.171948+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
-2020-08-14T07:53:21.171948+00:00 app[web.1]: requireStack: [
-2020-08-14T07:53:21.171948+00:00 app[web.1]: '/app/webpack.config.js',
-2020-08-14T07:53:21.171948+00:00 app[web.1]: '/app/node_modules/webpack-cli/bin/utils/convert-argv.js',
-2020-08-14T07:53:21.171949+00:00 app[web.1]: '/app/node_modules/webpack-dev-server/bin/webpack-dev-server.js'
-2020-08-14T07:53:21.171949+00:00 app[web.1]: ]
-2020-08-14T07:53:21.171949+00:00 app[web.1]: }
-2020-08-14T07:53:21.183185+00:00 app[web.1]: npm ERR! code ELIFECYCLE
-2020-08-14T07:53:21.183483+00:00 app[web.1]: npm ERR! errno 1
-2020-08-14T07:53:21.186684+00:00 app[web.1]: npm ERR! react-to-do@1.0.0 start: `webpack-dev-server --mode development --open --hot`
-2020-08-14T07:53:21.186884+00:00 app[web.1]: npm ERR! Exit status 1
-2020-08-14T07:53:21.187090+00:00 app[web.1]: npm ERR!
-2020-08-14T07:53:21.187270+00:00 app[web.1]: npm ERR! Failed at the react-to-do@1.0.0 start script.
-2020-08-14T07:53:21.187387+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
-2020-08-14T07:53:21.195382+00:00 app[web.1]:
-2020-08-14T07:53:21.195612+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
-2020-08-14T07:53:21.195770+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2020-08-14T07_53_21_188Z-debug.log
-2020-08-14T07:53:21.247927+00:00 heroku[web.1]: Process exited with status 1
-2020-08-14T07:53:21.287154+00:00 heroku[web.1]: State changed from starting to crashed
-2020-08-14T07:53:22.829915+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=polar-tundra-52679.herokuapp.com request_id=efc4a791-3110-4929-abd1-0eaf6dbf82d0 fwd="85.221.157.166" dyno= connect= service= status=503 bytes= protocol=https
-2020-08-14T07:53:24.328020+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=polar-tundra-52679.herokuapp.com request_id=7ee68ce1-bca9-4a39-a78c-57df11e2330f fwd="85.221.157.166" dyno= connect= service= status=503 bytes= protocol=https
-2020-08-14T07:55:05.156762+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=polar-tundra-52679.herokuapp.com request_id=d8f9abf8-6c0d-40a3-a537-32042dd68b81 fwd="85.221.157.166" dyno= connect= service= status=503 bytes= protocol=https
-2020-08-14T07:55:05.564531+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=polar-tundra-52679.herokuapp.com request_id=c66e5f84-b763-4ce5-b456-0f60aae28839 fwd="85.221.157.166" dyno= connect= service= status=503 bytes= protocol=https
-2020-08-14T07:56:28.000000+00:00 app[api]: Build started by user mat.pawel@gmail.com
-2020-08-14T07:57:27.202569+00:00 app[api]: Deploy 8cb31915 by user mat.pawel@gmail.com
-2020-08-14T07:57:27.202569+00:00 app[api]: Release v13 created by user mat.pawel@gmail.com
-2020-08-14T07:57:27.416677+00:00 heroku[web.1]: State changed from crashed to starting
-2020-08-14T07:57:30.982222+00:00 heroku[web.1]: Starting process with command `npm start`
-2020-08-14T07:57:31.000000+00:00 app[api]: Build succeeded
-2020-08-14T07:57:33.581675+00:00 app[web.1]:
-2020-08-14T07:57:33.581683+00:00 app[web.1]: > react-to-do@1.0.0 start /app
-2020-08-14T07:57:33.581684+00:00 app[web.1]: > webpack-dev-server --mode development --open --hot
-2020-08-14T07:57:33.581684+00:00 app[web.1]:
-2020-08-14T07:57:35.071765+00:00 app[web.1]: Ôä╣ ´Żówds´Żú: Project is running at http://localhost:8080/
-2020-08-14T07:57:35.072170+00:00 app[web.1]: Ôä╣ ´Żówds´Żú: webpack output is served from /
-2020-08-14T07:57:35.072242+00:00 app[web.1]: Ôä╣ ´Żówds´Żú: Content not from webpack is served from /app
-2020-08-14T07:57:36.074029+00:00 app[web.1]: Ôťľ ´Żówdm´Żú: Hash: 00fbe4625dcd80df9feb
-2020-08-14T07:57:36.074040+00:00 app[web.1]: Version: webpack 4.44.1
-2020-08-14T07:57:36.074040+00:00 app[web.1]: Time: 1047ms
-2020-08-14T07:57:36.074041+00:00 app[web.1]: Built at: 08/14/2020 7:57:36 AM
-2020-08-14T07:57:36.074041+00:00 app[web.1]: Asset       Size  Chunks             Chunk Names
-2020-08-14T07:57:36.074041+00:00 app[web.1]: index.html  547 bytes          [emitted]
-2020-08-14T07:57:36.074041+00:00 app[web.1]: scripts_bundle.js    394 KiB    main  [emitted]  main
-2020-08-14T07:57:36.074042+00:00 app[web.1]: Entrypoint main = scripts_bundle.js
-2020-08-14T07:57:36.074043+00:00 app[web.1]: [0] multi (webpack)-dev-server/client?http://localhost:8080 (webpack)/hot/dev-server.js ./src/index.js 52 bytes {main} [built]
-2020-08-14T07:57:36.074043+00:00 app[web.1]: [./node_modules/ansi-html/index.js] 4.16 KiB {main} [built]
-2020-08-14T07:57:36.074043+00:00 app[web.1]: [./node_modules/strip-ansi/index.js] 161 bytes {main} [built]
-2020-08-14T07:57:36.074044+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/index.js?http://localhost:8080] (webpack)-dev-server/client?http://localhost:8080 4.29 KiB {main} [built]
-2020-08-14T07:57:36.074044+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/overlay.js] (webpack)-dev-server/client/overlay.js 3.51 KiB {main} [built]
-2020-08-14T07:57:36.074045+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/socket.js] (webpack)-dev-server/client/socket.js 1.53 KiB {main} [built]
-2020-08-14T07:57:36.074045+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/utils/createSocketUrl.js] (webpack)-dev-server/client/utils/createSocketUrl.js 2.91 KiB {main} [built]
-2020-08-14T07:57:36.074045+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/utils/log.js] (webpack)-dev-server/client/utils/log.js 964 bytes {main} [built]
-2020-08-14T07:57:36.074046+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/utils/reloadApp.js] (webpack)-dev-server/client/utils/reloadApp.js 1.59 KiB {main} [built]
-2020-08-14T07:57:36.074046+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/utils/sendMessage.js] (webpack)-dev-server/client/utils/sendMessage.js 402 bytes {main} [built]
-2020-08-14T07:57:36.074046+00:00 app[web.1]: [./node_modules/webpack/hot sync ^\.\/log$] (webpack)/hot sync nonrecursive ^\.\/log$ 170 bytes {main} [built]
-2020-08-14T07:57:36.074047+00:00 app[web.1]: [./node_modules/webpack/hot/dev-server.js] (webpack)/hot/dev-server.js 1.59 KiB {main} [built]
-2020-08-14T07:57:36.074047+00:00 app[web.1]: [./node_modules/webpack/hot/emitter.js] (webpack)/hot/emitter.js 75 bytes {main} [built]
-2020-08-14T07:57:36.074047+00:00 app[web.1]: [./node_modules/webpack/hot/log-apply-result.js] (webpack)/hot/log-apply-result.js 1.27 KiB {main} [built]
-2020-08-14T07:57:36.074047+00:00 app[web.1]: [./node_modules/webpack/hot/log.js] (webpack)/hot/log.js 1.34 KiB {main} [built]
-2020-08-14T07:57:36.074048+00:00 app[web.1]: + 19 hidden modules
-2020-08-14T07:57:36.074048+00:00 app[web.1]:
-2020-08-14T07:57:36.074048+00:00 app[web.1]: ERROR in Entry module not found: Error: Can't resolve 'babel-loader' in '/app'
-2020-08-14T07:57:36.074048+00:00 app[web.1]:
-2020-08-14T07:57:36.074049+00:00 app[web.1]: ERROR in multi (webpack)-dev-server/client?http://localhost:8080 (webpack)/hot/dev-server.js ./src/index.js
-2020-08-14T07:57:36.074049+00:00 app[web.1]: Module not found: Error: Can't resolve 'babel-loader' in '/app'
-2020-08-14T07:57:36.074049+00:00 app[web.1]: @ multi (webpack)-dev-server/client?http://localhost:8080 (webpack)/hot/dev-server.js ./src/index.js main[2]
-2020-08-14T07:57:36.074049+00:00 app[web.1]: Child html-webpack-plugin for "index.html":
-2020-08-14T07:57:36.074050+00:00 app[web.1]: 1 asset
-2020-08-14T07:57:36.074050+00:00 app[web.1]: Entrypoint undefined = index.html
-2020-08-14T07:57:36.074050+00:00 app[web.1]: [./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html] 693 bytes {0} [built]
-2020-08-14T07:57:36.074050+00:00 app[web.1]: [./node_modules/lodash/lodash.js] 530 KiB {0} [built]
-2020-08-14T07:57:36.074050+00:00 app[web.1]: [./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {0} [built]
-2020-08-14T07:57:36.074051+00:00 app[web.1]: [./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 497 bytes {0} [built]
-2020-08-14T07:57:36.074113+00:00 app[web.1]: Ôä╣ ´Żówdm´Żú: Failed to compile.
-2020-08-14T07:58:31.453081+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
-2020-08-14T07:58:31.472138+00:00 heroku[web.1]: Stopping process with SIGKILL
-2020-08-14T07:58:31.532933+00:00 heroku[web.1]: Process exited with status 137
-2020-08-14T07:58:31.569206+00:00 heroku[web.1]: State changed from starting to crashed
-2020-08-14T07:58:34.010110+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=polar-tundra-52679.herokuapp.com request_id=8ce8876f-e963-48a6-b965-aa51e8927849 fwd="85.221.157.166" dyno= connect= service= status=503 bytes= protocol=https
-2020-08-14T07:58:35.103727+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=polar-tundra-52679.herokuapp.com request_id=fd9c892d-0ee3-4e39-a829-17c90e1339e2 fwd="85.221.157.166" dyno= connect= service= status=503 bytes= protocol=https
-2020-08-14T07:59:56.242474+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=polar-tundra-52679.herokuapp.com request_id=2571e5c7-81c4-43f0-912a-9f21c5552099 fwd="85.221.157.166" dyno= connect= service= status=503 bytes= protocol=https
-2020-08-14T07:59:56.658685+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=polar-tundra-52679.herokuapp.com request_id=e0ed91ab-fedc-4c2c-8545-3f3155678e96 fwd="85.221.157.166" dyno= connect= service= status=503 bytes= protocol=https
+$ heroku logs
+2020-08-18T09:54:23.791799+00:00 app[web.1]: Ôä╣ ´Żówds´Żú: 404s will fallback to /index.html
+2020-08-18T09:54:25.382262+00:00 app[web.1]: Ôťľ ´Żówdm´Żú: Hash: 5bff161be0dfd4be11be
+2020-08-18T09:54:25.382277+00:00 app[web.1]: Version: webpack 4.44.1
+2020-08-18T09:54:25.382277+00:00 app[web.1]: Time: 1627ms
+2020-08-18T09:54:25.382277+00:00 app[web.1]: Built at: 08/18/2020 9:54:25 AM
+2020-08-18T09:54:25.382278+00:00 app[web.1]: Asset       Size  Chunks             Chunk Names
+2020-08-18T09:54:25.382278+00:00 app[web.1]: index.html  548 bytes          [emitted]
+2020-08-18T09:54:25.382279+00:00 app[web.1]: scripts_bundle.js    394 KiB    main  [emitted]  main
+2020-08-18T09:54:25.382282+00:00 app[web.1]: Entrypoint main = scripts_bundle.js
+2020-08-18T09:54:25.382283+00:00 app[web.1]: [0] multi (webpack)-dev-server/client?http://localhost:8080 (webpack)/hot/dev-server.js ./src/index.js 52 bytes {main} [built]
+2020-08-18T09:54:25.382283+00:00 app[web.1]: [./node_modules/ansi-html/index.js] 4.16 KiB {main} [built]
+2020-08-18T09:54:25.382283+00:00 app[web.1]: [./node_modules/strip-ansi/index.js] 161 bytes {main} [built]
+2020-08-18T09:54:25.382286+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/index.js?http://localhost:8080] (webpack)-dev-server/client?http://localhost:8080 4.29 KiB {main} [built]
+2020-08-18T09:54:25.382317+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/overlay.js] (webpack)-dev-server/client/overlay.js 3.51 KiB {main} [built]
+2020-08-18T09:54:25.382318+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/socket.js] (webpack)-dev-server/client/socket.js 1.53 KiB {main} [built]
+2020-08-18T09:54:25.382319+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/utils/createSocketUrl.js] (webpack)-dev-server/client/utils/createSocketUrl.js 2.91 KiB {main} [built]
+2020-08-18T09:54:25.382319+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/utils/log.js] (webpack)-dev-server/client/utils/log.js 964 bytes {main} [built]
+2020-08-18T09:54:25.382320+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/utils/reloadApp.js] (webpack)-dev-server/client/utils/reloadApp.js 1.59 KiB {main} [built]
+2020-08-18T09:54:25.382320+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/utils/sendMessage.js] (webpack)-dev-server/client/utils/sendMessage.js 402 bytes {main} [built]
+2020-08-18T09:54:25.382321+00:00 app[web.1]: [./node_modules/webpack/hot sync ^\.\/log$] (webpack)/hot sync nonrecursive ^\.\/log$ 170 bytes {main} [built]
+2020-08-18T09:54:25.382321+00:00 app[web.1]: [./node_modules/webpack/hot/dev-server.js] (webpack)/hot/dev-server.js 1.59 KiB {main} [built]
+2020-08-18T09:54:25.382322+00:00 app[web.1]: [./node_modules/webpack/hot/emitter.js] (webpack)/hot/emitter.js 75 bytes {main} [built]
+2020-08-18T09:54:25.382322+00:00 app[web.1]: [./node_modules/webpack/hot/log-apply-result.js] (webpack)/hot/log-apply-result.js 1.27 KiB {main} [built]
+2020-08-18T09:54:25.382323+00:00 app[web.1]: [./node_modules/webpack/hot/log.js] (webpack)/hot/log.js 1.34 KiB {main} [built]
+2020-08-18T09:54:25.382323+00:00 app[web.1]: + 19 hidden modules
+2020-08-18T09:54:25.382324+00:00 app[web.1]:
+2020-08-18T09:54:25.382324+00:00 app[web.1]: ERROR in Entry module not found: Error: Can't resolve 'babel-loader' in '/app'
+2020-08-18T09:54:25.382325+00:00 app[web.1]:
+2020-08-18T09:54:25.382325+00:00 app[web.1]: ERROR in multi (webpack)-dev-server/client?http://localhost:8080 (webpack)/hot/dev-server.js ./src/index.js
+2020-08-18T09:54:25.382326+00:00 app[web.1]: Module not found: Error: Can't resolve 'babel-loader' in '/app'
+2020-08-18T09:54:25.382326+00:00 app[web.1]: @ multi (webpack)-dev-server/client?http://localhost:8080 (webpack)/hot/dev-server.js ./src/index.js main[2]
+2020-08-18T09:54:25.382326+00:00 app[web.1]: Child html-webpack-plugin for "index.html":
+2020-08-18T09:54:25.382327+00:00 app[web.1]: 1 asset
+2020-08-18T09:54:25.382327+00:00 app[web.1]: Entrypoint undefined = index.html
+2020-08-18T09:54:25.382328+00:00 app[web.1]: [./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html] 693 bytes {0} [built]
+2020-08-18T09:54:25.382328+00:00 app[web.1]: [./node_modules/lodash/lodash.js] 530 KiB {0} [built]
+2020-08-18T09:54:25.382328+00:00 app[web.1]: [./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {0} [built]
+2020-08-18T09:54:25.382329+00:00 app[web.1]: [./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 497 bytes {0} [built]
+2020-08-18T09:54:25.382389+00:00 app[web.1]: Ôä╣ ´Żówdm´Żú: Failed to compile.
+2020-08-18T09:55:19.943421+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2020-08-18T09:55:19.964465+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-08-18T09:55:19.996439+00:00 app[web.1]: Error waiting for process to terminate: No child processes
+2020-08-18T09:55:20.081377+00:00 heroku[web.1]: Process exited with status 22
+2020-08-18T09:55:20.129988+00:00 heroku[web.1]: State changed from starting to crashed
+2020-08-18T09:55:20.137919+00:00 heroku[web.1]: State changed from crashed to starting
+2020-08-18T09:55:23.777517+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-08-18T09:55:25.978630+00:00 app[web.1]:
+2020-08-18T09:55:25.978650+00:00 app[web.1]: > react-to-do@1.0.0 start /app
+2020-08-18T09:55:25.978651+00:00 app[web.1]: > webpack-dev-server --mode development --open --hot
+2020-08-18T09:55:25.978651+00:00 app[web.1]:
+2020-08-18T09:55:27.358036+00:00 app[web.1]: Ôä╣ ´Żówds´Żú: Project is running at http://localhost:8080/
+2020-08-18T09:55:27.358570+00:00 app[web.1]: Ôä╣ ´Żówds´Żú: webpack output is served from /
+2020-08-18T09:55:27.358689+00:00 app[web.1]: Ôä╣ ´Żówds´Żú: Content not from webpack is served from /app
+2020-08-18T09:55:27.358792+00:00 app[web.1]: Ôä╣ ´Żówds´Żú: 404s will fallback to /index.html
+2020-08-18T09:55:28.467870+00:00 app[web.1]: Ôťľ ´Żówdm´Żú: Hash: 5bff161be0dfd4be11be
+2020-08-18T09:55:28.467885+00:00 app[web.1]: Version: webpack 4.44.1
+2020-08-18T09:55:28.467886+00:00 app[web.1]: Time: 1111ms
+2020-08-18T09:55:28.467887+00:00 app[web.1]: Built at: 08/18/2020 9:55:28 AM
+2020-08-18T09:55:28.467887+00:00 app[web.1]: Asset       Size  Chunks             Chunk Names
+2020-08-18T09:55:28.467887+00:00 app[web.1]: index.html  548 bytes          [emitted]
+2020-08-18T09:55:28.467888+00:00 app[web.1]: scripts_bundle.js    394 KiB    main  [emitted]  main
+2020-08-18T09:55:28.467888+00:00 app[web.1]: Entrypoint main = scripts_bundle.js
+2020-08-18T09:55:28.467889+00:00 app[web.1]: [0] multi (webpack)-dev-server/client?http://localhost:8080 (webpack)/hot/dev-server.js ./src/index.js 52 bytes {main} [built]
+2020-08-18T09:55:28.467889+00:00 app[web.1]: [./node_modules/ansi-html/index.js] 4.16 KiB {main} [built]
+2020-08-18T09:55:28.467890+00:00 app[web.1]: [./node_modules/strip-ansi/index.js] 161 bytes {main} [built]
+2020-08-18T09:55:28.467890+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/index.js?http://localhost:8080] (webpack)-dev-server/client?http://localhost:8080 4.29 KiB {main} [built]
+2020-08-18T09:55:28.467891+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/overlay.js] (webpack)-dev-server/client/overlay.js 3.51 KiB {main} [built]
+2020-08-18T09:55:28.467891+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/socket.js] (webpack)-dev-server/client/socket.js 1.53 KiB {main} [built]
+2020-08-18T09:55:28.467892+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/utils/createSocketUrl.js] (webpack)-dev-server/client/utils/createSocketUrl.js 2.91 KiB {main} [built]
+2020-08-18T09:55:28.467892+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/utils/log.js] (webpack)-dev-server/client/utils/log.js 964 bytes {main} [built]
+2020-08-18T09:55:28.467893+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/utils/reloadApp.js] (webpack)-dev-server/client/utils/reloadApp.js 1.59 KiB {main} [built]
+2020-08-18T09:55:28.467894+00:00 app[web.1]: [./node_modules/webpack-dev-server/client/utils/sendMessage.js] (webpack)-dev-server/client/utils/sendMessage.js 402 bytes {main} [built]
+2020-08-18T09:55:28.467894+00:00 app[web.1]: [./node_modules/webpack/hot sync ^\.\/log$] (webpack)/hot sync nonrecursive ^\.\/log$ 170 bytes {main} [built]
+2020-08-18T09:55:28.467895+00:00 app[web.1]: [./node_modules/webpack/hot/dev-server.js] (webpack)/hot/dev-server.js 1.59 KiB {main} [built]
+2020-08-18T09:55:28.467895+00:00 app[web.1]: [./node_modules/webpack/hot/emitter.js] (webpack)/hot/emitter.js 75 bytes {main} [built]
+2020-08-18T09:55:28.467896+00:00 app[web.1]: [./node_modules/webpack/hot/log-apply-result.js] (webpack)/hot/log-apply-result.js 1.27 KiB {main} [built]
+2020-08-18T09:55:28.467896+00:00 app[web.1]: [./node_modules/webpack/hot/log.js] (webpack)/hot/log.js 1.34 KiB {main} [built]
+2020-08-18T09:55:28.467897+00:00 app[web.1]: + 19 hidden modules
+2020-08-18T09:55:28.467897+00:00 app[web.1]:
+2020-08-18T09:55:28.467898+00:00 app[web.1]: ERROR in Entry module not found: Error: Can't resolve 'babel-loader' in '/app'
+2020-08-18T09:55:28.467898+00:00 app[web.1]:
+2020-08-18T09:55:28.467898+00:00 app[web.1]: ERROR in multi (webpack)-dev-server/client?http://localhost:8080 (webpack)/hot/dev-server.js ./src/index.js
+2020-08-18T09:55:28.467899+00:00 app[web.1]: Module not found: Error: Can't resolve 'babel-loader' in '/app'
+2020-08-18T09:55:28.467899+00:00 app[web.1]: @ multi (webpack)-dev-server/client?http://localhost:8080 (webpack)/hot/dev-server.js ./src/index.js main[2]
+2020-08-18T09:55:28.467900+00:00 app[web.1]: Child html-webpack-plugin for "index.html":
+2020-08-18T09:55:28.467900+00:00 app[web.1]: 1 asset
+2020-08-18T09:55:28.467901+00:00 app[web.1]: Entrypoint undefined = index.html
+2020-08-18T09:55:28.467901+00:00 app[web.1]: [./node_modules/html-webpack-plugin/lib/loader.js!./src/index.html] 693 bytes {0} [built]
+2020-08-18T09:55:28.467901+00:00 app[web.1]: [./node_modules/lodash/lodash.js] 530 KiB {0} [built]
+2020-08-18T09:55:28.467902+00:00 app[web.1]: [./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {0} [built]
+2020-08-18T09:55:28.467902+00:00 app[web.1]: [./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 497 bytes {0} [built]
+2020-08-18T09:55:28.467956+00:00 app[web.1]: Ôä╣ ´Żówdm´Żú: Failed to compile.
+2020-08-18T09:55:43.961570+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=polar-tundra-52679.herokuapp.com request_id=c1107d3b-e9eb-4a67-a6dd-e17d72807721 fwd="85.221.157.166" dyno= connect= service= status=503 bytes= protocol=https
+2020-08-18T09:56:24.086671+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2020-08-18T09:56:24.106774+00:00 heroku[web.1]: Stopping process with SIGKILL
+2020-08-18T09:56:24.198169+00:00 heroku[web.1]: Process exited with status 137
+2020-08-18T09:56:24.238261+00:00 heroku[web.1]: State changed from starting to crashed
+2020-08-18T09:56:26.184433+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=polar-tundra-52679.herokuapp.com request_id=e53c4d2b-6038-4ede-be01-df7469a5cb09 fwd="85.221.157.166" dyno= connect= service= status=503 bytes= protocol=https
+2020-08-18T09:56:26.233544+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=polar-tundra-52679.herokuapp.com request_id=02c0bf37-5129-4cd4-a121-0522e6dd8f5c fwd="85.221.157.166" dyno= connect= service= status=503 bytes= protocol=https
+2020-08-18T09:56:27.376193+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=polar-tundra-52679.herokuapp.com request_id=e9be46d6-37bb-4860-b7c6-83902bda2ce9 fwd="85.221.157.166" dyno= connect= service= status=503 bytes= protocol=https
